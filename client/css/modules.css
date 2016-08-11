@@ -1,0 +1,382 @@
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. Fonts
+	2. magallanes_mitielight
+	3. magallanes_mitiebold
+
+2. Module
+
+3. Page Headers
+	2. Large
+		2.1 Large Headers H1's
+		2.2 Large Headers p's
+
+	3. Small
+
+4. Heading Elements
+
+5. Tabs
+
+6. Color Palette
+	1. Primary 1-4
+	2. Secondary 1-3
+
+7. Modals
+	1. Warning
+	2. Info
+	3. Success
+
+8. Buttons
+	1. Default
+
+9. Helper Classes (Quote, Big, Bold)
+	1. Quote
+	2. Big
+	3. Bold
+	3. give_ptop
+	4. no-margin
+	5. no-padding
+	6. reset-element
+
+10. ProgressBars
+	1. BulkUploader Progress Bar
+
+11. Shortcuts
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Fonts]
+*/
+
+@font-face
+{
+	font-family: 'magallanes_mitielight';
+	src: url('/fonts/magallanesmitie-light-webfont.eot');
+	src: url('/fonts/magallanesmitie-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/magallanesmitie-light-webfont.ttf') format('truetype'),
+		 url('/fonts/magallanesmitie-light-webfont.svg#magallanes_mitielight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'magallanes_mitiebold';
+	src: url('/fonts/magallanesmitie-bold-webfont.eot');
+	src: url('/fonts/magallanesmitie-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/magallanesmitie-bold-webfont.ttf') format('truetype'),
+		 url('/fonts/magallanesmitie-bold-webfont.svg#magallanes_mitiebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------------------------------------------------------------------
+[2. Module]
+*/
+
+.module{
+	padding: 5px;
+}
+
+div .module p {
+	font-family: 'magallanes_mitielight', Georgia, Palatino, Times New Roman, serif;
+	font-size:1.1em;
+}
+
+/*------------------------------------------------------------------
+[3. Page Headers]
+*/
+
+.header-large{
+    position: relative;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: 0 2px 15px black;
+    box-shadow: 0 2px 15px #5B1F69;
+    background-position: 0 -5px;
+    padding: 15px 20px 15px 20px;
+	background-color:#E0E1DD;
+	background-color: #565a5c;
+    color: #fff;
+}
+
+.header-large h1{
+	font-family: 'magallanes_mitiebold', Georgia, Palatino, Times New Roman, serif;
+}
+
+.header-large p{
+	font-family: 'magallanes_mitielight', Georgia, Palatino, Times New Roman, serif;
+}
+
+
+.header-small{
+    background: #565a5c;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: #fff;
+    padding: 5px;
+	padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+/*------------------------------------------------------------------
+[4. Heading Elements]
+*/
+
+/* Reset margins set for headings*/
+.header-small h1,
+.header-small h2,
+.header-small h3,
+.header-small h4,
+.header-small h5,
+.header-small h6 {
+	margin:0px;
+	margin:5px;
+}
+
+h2, h3{
+	font-family: 'magallanes_mitiebold', Georgia, Palatino, Times New Roman, serif;
+	font-size: 1.8em;
+}
+
+/*------------------------------------------------------------------
+[5. Tabs]
+*/
+
+/* Override default bootstrap rules*/
+.nav-tabs{
+	border-bottom:1px solid #FB4F14;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	border :1px solid #FB4F14;
+	border-bottom-color: transparent;
+}
+
+.nav-tabs > li:not(.active) > a:hover{
+	background-color: inherit;
+	color: rgb(169,0,97);
+	border: 1px solid transparent;
+}
+
+.tabPanelActive{
+    border: 1px solid #FB4F14;
+	border-top: 0px;
+    border-radius: 5px;
+
+}
+
+
+/*------------------------------------------------------------------
+[6. Color Palette]
+*/
+
+.pcolor-1{
+	background-color: #5B1F69;
+}
+
+.pcolor-1-tint{
+	background-color: rgba(91,31,105,0.5);
+}
+
+.pcolor-2{
+	background-color: rgb(238,175,0);
+}
+
+.pcolor-2-tint{
+	background-color: rgba(238,175,0,0.5);
+}
+
+.pcolor-3{
+	background-color: #FB4F14;
+}
+
+.pcolor-3-tint{
+	background-color: rgba(251,79,20,0.5);
+}
+
+.pcolor-4{
+	background-color: #A90061;
+}
+
+.pcolor-4-tint{
+	background-color: rgba(169,0,97,0.5);
+}
+
+.scolor-1{
+	background-color:rgb(86,90,92);
+}
+
+.scolor-1-tint{
+	background-color:rgb(86,90,92); /* Legacy Fallback */
+	background-color:rgba(86,90,9,0.5);
+}
+
+.scolor-2{
+	background-color:rgb(139,141,142);
+}
+
+.scolor-2-tint{
+	background-color:rgb(139,141,142); /* Legacy Fallback */
+	background-color:rgba(139,141,142,0.5);
+
+}
+
+.scolor-3{
+	background-color:rgb(224,225,221);
+}
+
+.scolor-3-tint{
+	background-color:rgb(224,225,221); /* Legacy Fallback */
+	background-color:rgba(224,225,221,0.5);
+}
+
+.slab-dark-grey{
+    background-color: rgb(86,90,92);
+    color: #fff;
+	padding: 1em 2%;
+	margin-bottom:10px;
+}
+
+.slab-primary-1{
+    background-color: #5B1F69;
+    color: #fff;
+	padding: 1em 2%;
+	margin-bottom:10px;
+}
+
+.slab-primary-2{
+    background-color: rgb(238,175,0);
+    color: #fff;
+	padding: 1em 2%;
+	margin-bottom:10px;
+}
+
+.slab-primary-3{
+    background-color: #FB4F14;
+    color: #fff;
+	padding: 1em 2%;
+	margin-bottom:10px;
+}
+
+/*------------------------------------------------------------------
+[7. Modals]
+*/
+
+.alert-danger{
+    color: #fff;
+    border-color: #FB4F14 ;
+	background-color: #FB4F14;
+}
+
+#alertModal .btn-info,
+#alertModal .alert-info,
+.alert.alert-info
+{
+    /* Pink */
+    background-color: rgb(144,119,169) ;
+    color: #fff;
+    border-color: rgb(144,119,169);
+}
+
+#alertModal .btn-danger,
+#alertModal .alert-danger
+{
+    /* Orange */
+    background-color: rgb(213, 85, 85) ; /* Legacy browser fallback*/
+    color: #fff;
+    border-color: rgb(213, 85, 85) ;
+}
+
+#alertModal .btn-success,
+#alertModal .alert-success
+{
+    /* Purple */
+    background-color: rgb(127, 192, 127) ; /* Legacy browser fallback*/
+    color: #fff;
+    border-color: rgb(127, 192, 127);
+}
+
+
+/*------------------------------------------------------------------
+[8. Buttons]
+*/
+
+.btn-default{
+	background: #565A5C;
+	color:#fff;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:focus{
+	background: #8B8D8E;
+	color:#fff;
+}
+
+/*------------------------------------------------------------------
+[9. Helpers]
+*/
+
+.bold{
+	font-weight:bold;
+}
+
+.big{
+	font-size:2em;
+}
+
+.quote{
+	font-style:italic;
+}
+
+.give_ptop{
+	padding-top:15px;
+}
+
+.give_mtop{
+	margin-top:15px;
+}
+
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding:0;
+}
+
+.reset-element{
+	padding:0px;
+	margin:0px;
+}
+.light-text{
+	color:#fff;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important; /* This is designed to be last resort to important is fine*/
+}
+
+/*------------------------------------------------------------------
+[10. Progress Bars]
+*/
+
+#progressBarLabel {
+    text-align: center; /* If you want to center it */
+    line-height: 30px; /* Set the line-height to the same as the height of the progress bar container, to center it vertically */
+    color: #fff;
+}
+
+/*------------------------------------------------------------------
+[11. Shortcuts]
+*/
+.shortcut{
+    font-family: "Monaco", "Courier", monospace;
+    background: #e5e5e5;
+    background: rgba(229, 229, 229, 0.8);
+    padding: 0.5em 0.5em 0.4em;
+    border-radius: 0.3em;
+}
