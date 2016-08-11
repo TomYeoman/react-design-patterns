@@ -13,18 +13,15 @@ let styles = {
     color: '#fff',
   }
 }
-class Header extends React.Component {
+class HeaderLarge extends React.Component {
   render () {
     return (
       <div style={styles.container} className="clearfix header-large text-center">
-        <h1>Mitie Header</h1>
-        <p>This is actually a pattern right here. Its the
-        <code>.header-large</code> pattern. The header above is a design pattern too, which contains some others, like dropdown menus. Also, all the patterns below are in a
-        <code>.module</code>.
-        </p>
+        <h1> {this.props.primaryText} </h1>
+        <p> {this.props.additionalText} </p>
       </div>
     )
   }
 };
 
-export default Header;
+export default HeaderLarge;
