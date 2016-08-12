@@ -25,6 +25,10 @@ var Slabs = React.createClass({
             case 'grey':
                 styles.section.backgroundColor = "rgb(86,90,92)";
                 break;
+            case 'lightgrey':
+                styles.section.backgroundColor = "rgb(224, 225, 221)";
+                styles.section.color = "black";
+                break;
             case 'primary1':
                 styles.section.backgroundColor = "#5B1F69";
                 break;

@@ -39,6 +39,7 @@ export default () => {
                             <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Elements <span className="caret"></span></a>
                             <ul className="dropdown-menu">
                                 <li><Link to="/designpatterns/Headers" href="#">Headers</Link></li>
+                                <li><Link to="/designpatterns/Form" href="#">Forms</Link></li>
                                 <li><Link to="/designpatterns/ColorPalette" href="#">Color Palette</Link></li>
                                 <li><Link to="/designpatterns/Slabs" href="#">Slabs</Link></li>
                                 <li><Link to="/designpatterns/tabs" href="#">Tabs</Link></li>
