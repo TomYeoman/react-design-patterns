@@ -5,7 +5,7 @@ import App from './components/App';
 import DesignPatterns from './components/page-specific/DesignPatterns/DesignPatterns';
 import Headers from './components/page-specific/DesignPatterns/Headers';
 import Slabs from './components/page-specific/DesignPatterns/Slabs';
-import ExampleForm from './components/page-specific/DesignPatterns/ExampleForm';
+import Forms from './components/page-specific/DesignPatterns/Forms';
 
 export default (
   <Route path='/' component={App}>
@@ -14,7 +14,7 @@ export default (
 
     <Route path="/designpatterns/Headers" component={Headers} />
     <Route path="/designpatterns/Slabs" component={Slabs} />
-    <Route path="/designpatterns/Form" component={ExampleForm} />
+    <Route path="/designpatterns/Form" component={Forms} />
 
   </Route>
 )

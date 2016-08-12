@@ -20,7 +20,7 @@ var Tabs = React.createClass({
         */
 
         let _setupTabContainers = () => {
-            console.log("")
+            console.log()
             // Create a matching text body container for each tab + Populate with the fields required by page
             $('#innerPageTabs li').each(function (index) {
                 console.log("TTTESSST");
